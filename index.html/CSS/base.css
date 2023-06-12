@@ -1,0 +1,71 @@
+/* 初始化样式 */
+
+* { /* 清除内外边距  */
+    margin: 0;
+    padding: 0;
+    /* 避免padding和border撑大盒子 */
+    box-sizing: border-box;
+}
+
+/* 清除浮动 */
+    .clearfix:before,
+    .clearfix:after {
+        content: "";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both; }
+    .clearfix {
+    *zoom: 1; /* IE6、7专有 */}
+
+em,
+i {
+    /* 让em和i斜体文字不倾斜 */
+    font-style: normal;
+}
+
+li {
+    /* 去掉li前面的圆点 */
+    list-style: none;
+}
+
+img {
+    /* 照顾低版本的浏览器，如果图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底部的空白间隙 */
+    vertical-align: middle;
+}
+
+button {
+    /* 鼠标经过时变成小手 */
+    cursor: pointer;
+}
+
+a {
+    /* 设置默认颜色和去除下划线 */
+    /* color: #999; */
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    /* 鼠标经过链接时变色 */
+    color:#fff;
+}
+
+button,input {
+    font-family:Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 去掉默认灰色边框 */
+    border: 0;
+    /* 去掉点击时的蓝色边框 */
+    outline: none;
+}
+
+body {
+    /* 第一行是解决文字放大抗锯齿 */
+    -webkit-font-smoothing: antialiased;
+    background-color: steelblue;
+    font: 16px/1.5 microsoft yahei;
+    color: #000000;
+    font-weight: 300;
+}
